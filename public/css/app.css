@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root {
+    --col-1-green: #6b9124;
+    --col-2-blue: #3e629c;
+    --col-3-baige: #f4cf67;
+
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/storage/home_img/ozean.jpg");
+
+    /* Set a specific height */
+    height: 85vh;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.7em;
+    box-shadow: 0px 2px 26px -11px rgb(255, 255, 255);
+    border: 1px solid #cbd5e0;
+}
+
+.hero-text h1{
+    font-weight: bold;
+    font-size: 47px;
+    padding-top: 10px;
+}
+
+
+.cart-fixed {
+    position: fixed;
+    top: 73px;
+    right: 100px;
+}
+
+.cart-with {
+    width: 230px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.detail-text {
+}
+.detail-img {
+    background-color: #6b9124;
+    margin-right: 10%;
+}
+.detail-img img {
+    height: 600px;
+    min-width: 600px;
+
+    background-size: contain;
+}
+
+
+.message_box {
+    display: flex;
+    width: 100%;
+    /*background-color: #6b9124;*/
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.message_box img{
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.message_text_box {
+    display: flex;
+    flex-direction: column;
+    /*background-color: #6b9124;*/
+    justify-content: center;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 2px solid #7d7e80;
+}
+
+.message_text_box h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4em;
+}
+
+.create_message_flex {
+    display: flex;
+    width: 100%;
+    /*background-color: #6b9124;*/
+    justify-content: space-around;
+}
+
+.create_message_right {
+    display: flex;
+    flex-direction: column;
+    /*background-color: #3e629c;*/
+    justify-content: center;
+}
+
+.create_message_left div label{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.create_message_right img {
+    height: 200px;
+    width: 190px;
+    margin: 10px;
+    /*background-color: #f4cf67;*/
+}
+
+.create_message_img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
